@@ -3,10 +3,11 @@ package interfaces.impl;
 import interfaces.Contender;
 import interfaces.Obstacle;
 
-public class Cat implements Contender {
+public class Robot implements Contender {
+
     @Override
     public void doActivity(Obstacle obstacle) {
-        System.out.println("Cat is going to do..");
+        System.out.println("Robot is going to do..");
         obstacle.start();
     }
 }
