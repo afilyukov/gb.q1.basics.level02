@@ -24,8 +24,7 @@ public class ArrayThreading {
         System.arraycopy(arr, HALF_OF_SIZE, halfOfArray2, 0, HALF_OF_SIZE);
 
         new Thread(() -> doArrayMath(halfOfArray1)).start();
-
-       new Thread(() -> doArrayMath(halfOfArray2)).start();
+        new Thread(() -> doArrayMath(halfOfArray2)).start();
 
         mergeArrays(halfOfArray1, halfOfArray2);
 
